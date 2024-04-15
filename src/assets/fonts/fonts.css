@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'indie-flower';
+    src: local("IndieFlower-Regular"),
+        url('/src/assets/fonts/IndieFlower-Regular.ttf') format('truetype'),
+        url('/src/assets/fonts/IndieFlower-Regular.woff') format('woff'),
+        url('/src/assets/fonts/IndieFlower-Regular.woff2') format('woff2')
+  }
