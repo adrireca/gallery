@@ -10,6 +10,7 @@ const CategoryCard = ({ imageUrl, title, classStyle }) => {
             className={`card-category ${isHovered ? 'hovered' : ''} ${classStyle}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            // sx={{ width: '100%', height: '100%' }}
         >
             <Link to="/single">
                 <div className="gradient-layer"></div>
@@ -18,10 +19,11 @@ const CategoryCard = ({ imageUrl, title, classStyle }) => {
                     image={imageUrl}
                     alt={title}
                     className="card-category-image"
-                    sx={{
-                        width: '100%',
-                        height: '100%'
-                    }}
+                    // sx={{
+                    //     width: '100%',
+                    //     height: '100%',
+                    //     // objectFit: 'cover',
+                    // }}
                 />
                 <Box p={2} className="text-overlay-category">
                     <Typography className='title-category' variant="h6">{title}</Typography>
