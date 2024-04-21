@@ -9,18 +9,18 @@ import 'aos/dist/aos.css';
 /* https://picsum.photos/600/900 */
 
 const categories = [
-    { title: 'Wild Nature', imageUrl: '/src/assets/img/categories/wild-nature.jpeg', numberPhotos: 20 },
-    { title: 'Historic Cities', imageUrl: '/src/assets/img/categories/historic-cities.jpg', numberPhotos: 20 },
-    { title: 'Extreme Adventures', imageUrl: '/src/assets/img/categories/extreme-adventures.jpg', numberPhotos: 20 },
-    { title: 'Modern Architecture', imageUrl: '/src/assets/img/categories/modern-architecture.jpg', numberPhotos: 20 },
-    { title: 'Flora and Fauna', imageUrl: '/src/assets/img/categories/flora-and-fauna.jpg', numberPhotos: 20 },
-    { title: 'World Cultures', imageUrl: '/src/assets/img/categories/world-cultures.jpg', numberPhotos: 20 },
-    { title: 'Coastal Landscapes', imageUrl: '/src/assets/img/categories/coastal-landscapes.jpg', numberPhotos: 20 },
-    { title: 'Urban Art', imageUrl: '/src/assets/img/categories/urban-art.jpg', numberPhotos: 20 },
-    { title: 'International Cuisine', imageUrl: '/src/assets/img/categories/international-cuisine.jpg', numberPhotos: 20 },
-    { title: 'Everyday Moments', imageUrl: '/src/assets/img/categories/everyday-moments.jpg', numberPhotos: 20 },
-    { title: 'Underwater Wonders', imageUrl: '/src/assets/img/categories/water-wonders.jpg', numberPhotos: 20 },
-    { title: 'Rock Art', imageUrl: '/src/assets/img/categories/rock-art.jpg', numberPhotos: 20 },
+    { title: 'Wild Nature', imageUrl: '/src/assets/img/categories/wild-nature.jpeg', numberPhotos: 20, href: '/wild-nature' },
+    { title: 'Historic Cities', imageUrl: '/src/assets/img/categories/historic-cities.jpg', numberPhotos: 20, href: '/historic-cities' },
+    { title: 'Extreme Adventures', imageUrl: '/src/assets/img/categories/extreme-adventures.jpg', numberPhotos: 20, href: '/extreme-adventures' },
+    { title: 'Modern Architecture', imageUrl: '/src/assets/img/categories/modern-architecture.jpg', numberPhotos: 20, href: '/modern-architecture' },
+    { title: 'Flora and Fauna', imageUrl: '/src/assets/img/categories/flora-and-fauna.jpg', numberPhotos: 20, href: '/flora-and-fauna' },
+    { title: 'World Cultures', imageUrl: '/src/assets/img/categories/world-cultures.jpg', numberPhotos: 20, href: '/world-cultures' },
+    { title: 'Coastal Landscapes', imageUrl: '/src/assets/img/categories/coastal-landscapes.jpg', numberPhotos: 20, href: '/coastal-landscapes' },
+    { title: 'Urban Art', imageUrl: '/src/assets/img/categories/urban-art.jpg', numberPhotos: 20, href: '/urban-art' },
+    { title: 'International Cuisine', imageUrl: '/src/assets/img/categories/international-cuisine.jpg', numberPhotos: 20, href: '/international-cuisine' },
+    { title: 'Everyday Moments', imageUrl: '/src/assets/img/categories/everyday-moments.jpg', numberPhotos: 20, href: '/everyday-moments' },
+    { title: 'Underwater Wonders', imageUrl: '/src/assets/img/categories/water-wonders.jpg', numberPhotos: 20, href: '/water-wonders' },
+    { title: 'Rock Art', imageUrl: '/src/assets/img/categories/rock-art.jpg', numberPhotos: 20, href: '/rock-art' },
 ];
 
 
@@ -62,7 +62,7 @@ export const CategoriesCard = () => {
             >
                 {categories.map((category, i) => (
                     <Link
-                        to="/single"
+                        to= {category.href}
                         className={`card-category ${hoveredIndex === i ? 'hovered' : ''}`}
                         onMouseEnter={() => handleMouseEnter(i)}
                         onMouseLeave={handleMouseLeave}
