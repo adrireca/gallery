@@ -1,12 +1,10 @@
 import { Box, CardMedia, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import { Link } from 'react-router-dom';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import { Link, useLocation } from 'react-router-dom';
+import ImageGallery from './ImageGallery';
+import BackToHomeButton from './BackToHomeButton';
 
-
-/* https://picsum.photos/600/900 */
 
 const images = [
     { title: 'Angel Falls', imageUrl: '/src/assets/img/wildNature/salto-angel-venezuela.JPG', location: 'Venezuela' },
@@ -35,72 +33,80 @@ const images = [
 
 export const WildNature = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [galleryIndex, setGalleryIndex] = useState(null);
 
     const handleMouseEnter = (index) => {
         setHoveredIndex(index);
-        document.querySelectorAll('.card-category').forEach(element => {
-            element.removeAttribute('data-aos');
-        });
     };
 
     const handleMouseLeave = () => {
         setHoveredIndex(null);
-        document.querySelectorAll('.card-category').forEach(element => {
-            element.removeAttribute('data-aos');
-        })
     };
 
-    // useEffect(() => {
-    //     AOS.init({
-    //         duration: 300,
-    //         once: true,
-    //     });
-    //   }, []);
+    const handleImageClick = (index) => {
+        setGalleryIndex(index);
+    };
+
+    const handleCloseGallery = () => {
+        setGalleryIndex(null);
+    };
+
 
     return (
-        <ResponsiveMasonry
-            columnsCountBreakPoints={{
-                350: 1, 500: 2, 750: 3, 900: 4
-            }}
-        >
-            <Masonry
-                columnsCount={4}
+        <>
+            <BackToHomeButton />
+            <ResponsiveMasonry
+                columnsCountBreakPoints={{
+                    350: 1, 500: 2, 750: 3, 900: 4
+                }}
             >
-                {images.map((img, i) => (
-                    <Link
-                        to= ""
-                        className={`card-category ${hoveredIndex === i ? 'hovered' : ''}`}
-                        onMouseEnter={() => handleMouseEnter(i)}
-                        onMouseLeave={handleMouseLeave}
-                        key={i}
-                        // data-aos="zoom-in"
-                    >
-                        <div className='gradient-layer'></div>
-                        <CardMedia
-                            alt={img.title}
-                            component="img"
-                            image={img.imageUrl}
-                            className='card-category-image'
-                            style={{ width: "100%", display: "block" }}
-                        />
-                        <Box p={2} className="text-overlay-category">
-                            <Typography
-                                className='title-category'
-                                variant="h6"
-                            >
-                                {img.title}
-                            </Typography>
-                            <Typography
-                                className='description-category'
-                                variant="caption"
-                                sx={{ color: 'rgba(255, 255, 255, 0.7)' }}
-                            >
-                                ({img.location})
-                            </Typography>
-                        </Box>
-                    </Link>
-                ))}
-            </Masonry>
-        </ResponsiveMasonry>
+                <Masonry
+                    columnsCount={4}
+                >
+                    {images.map((img, i) => (
+                        <Link
+                            to=""
+                            className={`card-category ${hoveredIndex === i ? 'hovered' : ''}`}
+                            onMouseEnter={() => handleMouseEnter(i)}
+                            onMouseLeave={handleMouseLeave}
+                            onClick={() => handleImageClick(i)}
+                            key={i}
+                        >
+                            <div className='gradient-layer'></div>
+                            <CardMedia
+                                alt={img.title}
+                                component="img"
+                                image={img.imageUrl}
+                                className='card-category-image'
+                                style={{ width: "100%", display: "block" }}
+                            />
+                            <Box p={2} className="text-overlay-category">
+                                <Typography
+                                    className='title-category'
+                                    variant="h6"
+                                >
+                                    {img.title}
+                                </Typography>
+                                <Typography
+                                    className='description-category'
+                                    variant="caption"
+                                    sx={{ color: 'rgba(255, 255, 255, 0.7)' }}
+                                >
+                                    ({img.location})
+                                </Typography>
+                            </Box>
+                        </Link>
+                    ))}
+                </Masonry>
+            </ResponsiveMasonry>
+            {galleryIndex !== null && (
+                <ImageGallery
+                    images={images}
+                    selectedIndex={galleryIndex}
+                    onClose={handleCloseGallery}
+                    onChange={(index) => setGalleryIndex(index)}
+                />
+            )}
+        </>
     )
 }

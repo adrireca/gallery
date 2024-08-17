@@ -26,9 +26,17 @@ const categories = [
 
 
 export const CategoriesCard = () => {
-    // const [isHovered, setIsHovered] = useState(false);
-
     const [hoveredIndex, setHoveredIndex] = useState(null);
+
+    useEffect(() => {
+        AOS.init({
+            duration: 300,
+            once: true,
+        });
+
+        AOS.refresh();
+
+    }, []);
 
     const handleMouseEnter = (index) => {
         setHoveredIndex(index);
@@ -44,12 +52,6 @@ export const CategoriesCard = () => {
         })
     };
 
-    useEffect(() => {
-        AOS.init({
-            duration: 300,
-            once: true,
-        });
-      }, []);
 
     return (
         <ResponsiveMasonry
@@ -62,7 +64,7 @@ export const CategoriesCard = () => {
             >
                 {categories.map((category, i) => (
                     <Link
-                        to= {category.href}
+                        to={category.href}
                         className={`card-category ${hoveredIndex === i ? 'hovered' : ''}`}
                         onMouseEnter={() => handleMouseEnter(i)}
                         onMouseLeave={handleMouseLeave}
