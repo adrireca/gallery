@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -24,7 +25,10 @@ const ImageGallery = ({ images, selectedIndex, onClose, onChange }) => {
                             alt={img.title}
                             style={{ maxHeight: '90vh', objectFit: 'contain' }}
                         />
-                        <p className="legend">{img.title} ({img.location})</p>
+                        <Typography variant="h6" className="legend">
+                        {img.title} - {img.location}
+                        </Typography>
+                        {/* <p className="legend">{img.title} ({img.location})</p> */}
                     </div>
                 ))}
             </Carousel>

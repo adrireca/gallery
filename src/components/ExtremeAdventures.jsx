@@ -7,31 +7,31 @@ import BackToHomeButton from './BackToHomeButton';
 
 
 const images = [
-    { title: 'Angel Falls', imageUrl: '/src/assets/img/wildNature/salto-angel-venezuela.JPG', location: 'Venezuela' },
-    { title: 'Mercantour National Park', imageUrl: '/src/assets/img/wildNature/parc-mercantour.jpg', location: "France" },
-    { title: 'Antarctica', imageUrl: '/src/assets/img/wildNature/antartida.jpg', location: 'Antarctica' },
-    { title: 'Antelope Canyon', imageUrl: '/src/assets/img/wildNature/canon-antilope-eeuu.jpg', location: 'United States' },
-    { title: 'Atacama Desert', imageUrl: '/src/assets/img/wildNature/desierto-atacama-chile.jpg', location: 'Chile' },
-    { title: 'Arashiyama Bamboo Grove', imageUrl: '/src/assets/img/wildNature/bosque-arashiyama-japon.jpg', location: 'Japan' },
-    { title: 'Avenue of the Baobabs', imageUrl: '/src/assets/img/wildNature/Avenida-Baobabs-madagascar.jpg', location: 'Madagascar' },
-    { title: 'Azores', imageUrl: '/src/assets/img/wildNature/azores-portugal.jpg', location: 'Portugal' },
-    { title: 'Cappadocia', imageUrl: '/src/assets/img/wildNature/capadocia-turquia.jpg', location: 'Turkey' },
-    { title: 'Banff National Park', imageUrl: '/src/assets/img/wildNature/parque-banff-canada.jpg', location: 'Canada' },
-    { title: 'Cliffs of Moher', imageUrl: '/src/assets/img/wildNature/Acantilados-Moher-irlanda.jpg', location: 'Ireland' },
-    { title: 'Denali National Park', imageUrl: '/src/assets/img/wildNature/Parque-nacional-Denali-alaska.jpg', location: 'Alaska' },
-    { title: 'Grand Canyon', imageUrl: '/src/assets/img/wildNature/gran-cañon-eeuu.jpg', location: 'United States' },
-    { title: 'Faroe Islands', imageUrl: '/src/assets/img/wildNature/Islas-Feroe.jpg', location: 'Denmark' },
-    { title: 'Isle of Skye', imageUrl: '/src/assets/img/wildNature/Isla-Skye.jpg', location: 'Scotland' },
-    { title: 'Halong Bay', imageUrl: '/src/assets/img/wildNature/Bahía-Halong.jpg', location: 'Vietnam' },
-    { title: 'Red Lagoon', imageUrl: '/src/assets/img/wildNature/Laguna-Colorada.jpg', location: 'Bolivia' },
-    { title: 'Lake Tekapo', imageUrl: '/src/assets/img/wildNature/Lago-Tekapo.jpg', location: 'New Zealand' },
-    { title: 'Lake Baikal', imageUrl: '/src/assets/img/wildNature/Lago-Baikal.jpg', location: 'Russia' },
-    { title: 'The Great Barrier Reef', imageUrl: '/src/assets/img/wildNature/Gran-Barrera-Coral-australia.jpg', location: 'Australia' },
+    { title: 'Base Jumping', imageUrl: '/src/assets/img/extremeAdventures/salto-base-noruega.jpg', location: 'Kjerag (Norway)' },
+    { title: 'Cave Diving in Cenote Dos Ojos', imageUrl: '/src/assets/img/extremeAdventures/dos-ojos-cenote-mexico.jpg', location: "(Mexico)" },
+    { title: 'Rock Climbing on El Capitan', imageUrl: '/src/assets/img/extremeAdventures/el-capitan.jpg', location: '(USA)' },
+    { title: 'Paragliding', imageUrl: '/src/assets/img/extremeAdventures/alpes-suizos.jpg', location: '(Swiss Alps)' },
+    { title: 'Sandboarding', imageUrl: '/src/assets/img/extremeAdventures/sandboarding.jpg', location: 'Atacama Desert (Chile)' },
+    { title: 'Surfing', imageUrl: '/src/assets/img/extremeAdventures/surfing-tahiti.jpg', location: "Teahupo'o (Tahiti)" },
+    { title: 'Heli-skiing', imageUrl: '/src/assets/img/extremeAdventures/heli-skiing-alaska.jpg', location: 'Alaska (USA)' },
+    { title: 'White-water Rafting', imageUrl: '/src/assets/img/extremeAdventures/rapidos-zimbabwe.jpg', location: 'Zambezi River (Zambia/Zimbabwe)' },
+    { title: 'Trekking', imageUrl: '/src/assets/img/extremeAdventures/treking-everest.jpg', location: 'Everest (Nepal)' },
+    { title: 'Bungee Jumping', imageUrl: '/src/assets/img/extremeAdventures/puenting-sudafrica.jpg', location: 'Bloukrans Bridge (South Africa)' },
+    { title: 'Kitesurfing', imageUrl: '/src/assets/img/extremeAdventures/kitesurf-tarifa.jpg', location: 'Tarifa (Spain)' },
+    { title: 'Skydiving', imageUrl: '/src/assets/img/extremeAdventures/paracaidas-dubai.jpg', location: 'Dubai (United Arab Emirates)' },
+    { title: 'Motorcycling', imageUrl: '/src/assets/img/extremeAdventures/carretera-bolivia.jpg', location: 'Death Road (Bolivia)' },
+    { title: 'Canyoning', imageUrl: '/src/assets/img/extremeAdventures/garganta-francia.jpg', location: 'Verdon Gorge (France)' },
+    { title: 'Ice Climbing', imageUrl: '/src/assets/img/extremeAdventures/cascadas-canada.jpg', location: 'Helmcken Falls (Canada)' },
+    { title: 'Caving', imageUrl: '/src/assets/img/extremeAdventures/cuevas-waitomo.jpg', location: 'Waitomo (New Zealand)' },
+    { title: 'Hot Air Ballooning', imageUrl: '/src/assets/img/extremeAdventures/globo-namibia.jpg', location: 'the Namib Desert (Namibia)' },
+    { title: 'Mountaineering', imageUrl: '/src/assets/img/extremeAdventures/montanismo-antartida.jpg', location: 'Mount Vinson (Antarctica)' },
+    { title: 'Wildlife Safari', imageUrl: '/src/assets/img/extremeAdventures/safari.jpg', location: 'Okavango Delta (Botswana)' },
+    { title: 'Hiking the Arctic Circle', imageUrl: '/src/assets/img/extremeAdventures/caminata-artico.jpg', location: '(Greenland)' },
 ];
 
 
 
-export const WildNature = () => {
+export const ExtremeAdventures = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [galleryIndex, setGalleryIndex] = useState(null);
 
@@ -92,7 +92,7 @@ export const WildNature = () => {
                                     variant="caption"
                                     sx={{ color: 'rgba(255, 255, 255, 0.7)' }}
                                 >
-                                    ({img.location})
+                                    {img.location}
                                 </Typography>
                             </Box>
                         </Link>

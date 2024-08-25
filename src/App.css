@@ -9,12 +9,6 @@
 
 
 /* Home */
-.div-categories {
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
-  /* display: flex; */
-}
-
 .card-category {
   position: relative;
   overflow: hidden;
@@ -64,6 +58,7 @@
 .title-category {
   font-family: 'indie-flower' !important;
   color: #fff;
+  line-height: 1.2 !important;
 }
 
 .description-category {

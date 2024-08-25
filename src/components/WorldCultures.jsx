@@ -7,31 +7,31 @@ import BackToHomeButton from './BackToHomeButton';
 
 
 const images = [
-    { title: 'Angel Falls', imageUrl: '/src/assets/img/wildNature/salto-angel-venezuela.JPG', location: 'Venezuela' },
-    { title: 'Mercantour National Park', imageUrl: '/src/assets/img/wildNature/parc-mercantour.jpg', location: "France" },
-    { title: 'Antarctica', imageUrl: '/src/assets/img/wildNature/antartida.jpg', location: 'Antarctica' },
-    { title: 'Antelope Canyon', imageUrl: '/src/assets/img/wildNature/canon-antilope-eeuu.jpg', location: 'United States' },
-    { title: 'Atacama Desert', imageUrl: '/src/assets/img/wildNature/desierto-atacama-chile.jpg', location: 'Chile' },
-    { title: 'Arashiyama Bamboo Grove', imageUrl: '/src/assets/img/wildNature/bosque-arashiyama-japon.jpg', location: 'Japan' },
-    { title: 'Avenue of the Baobabs', imageUrl: '/src/assets/img/wildNature/Avenida-Baobabs-madagascar.jpg', location: 'Madagascar' },
-    { title: 'Azores', imageUrl: '/src/assets/img/wildNature/azores-portugal.jpg', location: 'Portugal' },
-    { title: 'Cappadocia', imageUrl: '/src/assets/img/wildNature/capadocia-turquia.jpg', location: 'Turkey' },
-    { title: 'Banff National Park', imageUrl: '/src/assets/img/wildNature/parque-banff-canada.jpg', location: 'Canada' },
-    { title: 'Cliffs of Moher', imageUrl: '/src/assets/img/wildNature/Acantilados-Moher-irlanda.jpg', location: 'Ireland' },
-    { title: 'Denali National Park', imageUrl: '/src/assets/img/wildNature/Parque-nacional-Denali-alaska.jpg', location: 'Alaska' },
-    { title: 'Grand Canyon', imageUrl: '/src/assets/img/wildNature/gran-cañon-eeuu.jpg', location: 'United States' },
-    { title: 'Faroe Islands', imageUrl: '/src/assets/img/wildNature/Islas-Feroe.jpg', location: 'Denmark' },
-    { title: 'Isle of Skye', imageUrl: '/src/assets/img/wildNature/Isla-Skye.jpg', location: 'Scotland' },
-    { title: 'Halong Bay', imageUrl: '/src/assets/img/wildNature/Bahía-Halong.jpg', location: 'Vietnam' },
-    { title: 'Red Lagoon', imageUrl: '/src/assets/img/wildNature/Laguna-Colorada.jpg', location: 'Bolivia' },
-    { title: 'Lake Tekapo', imageUrl: '/src/assets/img/wildNature/Lago-Tekapo.jpg', location: 'New Zealand' },
-    { title: 'Lake Baikal', imageUrl: '/src/assets/img/wildNature/Lago-Baikal.jpg', location: 'Russia' },
-    { title: 'The Great Barrier Reef', imageUrl: '/src/assets/img/wildNature/Gran-Barrera-Coral-australia.jpg', location: 'Australia' },
+    { title: 'Giant Sequoia', imageUrl: '/src/assets/img/floraAndFauna/img1-600x900.jpg', location: 'United States' },
+    { title: 'Bengal Tiger', imageUrl: '/src/assets/img/floraAndFauna/img2-900x600.jpg', location: "India" },
+    { title: 'Baobab', imageUrl: '/src/assets/img/floraAndFauna/img3-900x700.jpg', location: 'Africa, Madagascar, Australia' },
+    { title: 'Bald Eagle', imageUrl: '/src/assets/img/floraAndFauna/img4-900x700.jpg', location: 'United States' },
+    { title: 'Cherry Blossom', imageUrl: '/src/assets/img/floraAndFauna/img5-900x600.jpg', location: 'Japan' },
+    { title: 'African Elephant', imageUrl: '/src/assets/img/floraAndFauna/img6-1000x1400.jpg', location: 'Sub-Saharan Africa' },
+    { title: 'Rafflesia', imageUrl: '/src/assets/img/floraAndFauna/img7-800x1200.jpg', location: 'Southeast Asia' },
+    { title: 'Emperor Penguin', imageUrl: '/src/assets/img/floraAndFauna/img8-800x1000.jpg', location: 'Antarctica' },
+    { title: 'Venus Flytrap', imageUrl: '/src/assets/img/floraAndFauna/img9-800x1200.jpg', location: 'United States' },
+    { title: 'Red Kangaroo', imageUrl: '/src/assets/img/floraAndFauna/img10-900x600.jpg', location: 'Australia' },
+    { title: 'Mangroves', imageUrl: '/src/assets/img/floraAndFauna/img11-800x900.jpg', location: 'Tropical Coastal Regions' },
+    { title: 'Giant Panda', imageUrl: '/src/assets/img/floraAndFauna/img12-600x900.jpg', location: 'China' },
+    { title: 'Tree Fern', imageUrl: '/src/assets/img/floraAndFauna/img13-900x700.jpg', location: 'Tropical and Subtropical Forests' },
+    { title: 'Poison Dart Frog', imageUrl: '/src/assets/img/floraAndFauna/img14-800x1200.jpeg', location: 'Central and South America' },
+    { title: 'Orchids', imageUrl: '/src/assets/img/floraAndFauna/img15-600x800.jpg', location: 'Global' },
+    { title: 'Saguaro Cactus', imageUrl: '/src/assets/img/floraAndFauna/img16-600x900.jpg', location: 'United States' },
+    { title: 'Galápagos Tortoise', imageUrl: '/src/assets/img/floraAndFauna/img17-600x800.jpg', location: 'Galápagos Islands' },
+    { title: 'Ginkgo', imageUrl: '/src/assets/img/floraAndFauna/img18-800x1200.jpg', location: 'China' },
+    { title: 'Jaguar', imageUrl: '/src/assets/img/floraAndFauna/img19-800x800.jpg', location: 'Central and South America' },
+    { title: 'Blue Whale', imageUrl: '/src/assets/img/floraAndFauna/img20-900x600.jpg', location: 'Global Oceans' },
 ];
 
 
 
-export const WildNature = () => {
+export const WorldCultures = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [galleryIndex, setGalleryIndex] = useState(null);
 

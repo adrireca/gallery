@@ -7,31 +7,31 @@ import BackToHomeButton from './BackToHomeButton';
 
 
 const images = [
-    { title: 'Angel Falls', imageUrl: '/src/assets/img/wildNature/salto-angel-venezuela.JPG', location: 'Venezuela' },
-    { title: 'Mercantour National Park', imageUrl: '/src/assets/img/wildNature/parc-mercantour.jpg', location: "France" },
-    { title: 'Antarctica', imageUrl: '/src/assets/img/wildNature/antartida.jpg', location: 'Antarctica' },
-    { title: 'Antelope Canyon', imageUrl: '/src/assets/img/wildNature/canon-antilope-eeuu.jpg', location: 'United States' },
-    { title: 'Atacama Desert', imageUrl: '/src/assets/img/wildNature/desierto-atacama-chile.jpg', location: 'Chile' },
-    { title: 'Arashiyama Bamboo Grove', imageUrl: '/src/assets/img/wildNature/bosque-arashiyama-japon.jpg', location: 'Japan' },
-    { title: 'Avenue of the Baobabs', imageUrl: '/src/assets/img/wildNature/Avenida-Baobabs-madagascar.jpg', location: 'Madagascar' },
-    { title: 'Azores', imageUrl: '/src/assets/img/wildNature/azores-portugal.jpg', location: 'Portugal' },
-    { title: 'Cappadocia', imageUrl: '/src/assets/img/wildNature/capadocia-turquia.jpg', location: 'Turkey' },
-    { title: 'Banff National Park', imageUrl: '/src/assets/img/wildNature/parque-banff-canada.jpg', location: 'Canada' },
-    { title: 'Cliffs of Moher', imageUrl: '/src/assets/img/wildNature/Acantilados-Moher-irlanda.jpg', location: 'Ireland' },
-    { title: 'Denali National Park', imageUrl: '/src/assets/img/wildNature/Parque-nacional-Denali-alaska.jpg', location: 'Alaska' },
-    { title: 'Grand Canyon', imageUrl: '/src/assets/img/wildNature/gran-cañon-eeuu.jpg', location: 'United States' },
-    { title: 'Faroe Islands', imageUrl: '/src/assets/img/wildNature/Islas-Feroe.jpg', location: 'Denmark' },
-    { title: 'Isle of Skye', imageUrl: '/src/assets/img/wildNature/Isla-Skye.jpg', location: 'Scotland' },
-    { title: 'Halong Bay', imageUrl: '/src/assets/img/wildNature/Bahía-Halong.jpg', location: 'Vietnam' },
-    { title: 'Red Lagoon', imageUrl: '/src/assets/img/wildNature/Laguna-Colorada.jpg', location: 'Bolivia' },
-    { title: 'Lake Tekapo', imageUrl: '/src/assets/img/wildNature/Lago-Tekapo.jpg', location: 'New Zealand' },
-    { title: 'Lake Baikal', imageUrl: '/src/assets/img/wildNature/Lago-Baikal.jpg', location: 'Russia' },
-    { title: 'The Great Barrier Reef', imageUrl: '/src/assets/img/wildNature/Gran-Barrera-Coral-australia.jpg', location: 'Australia' },
+    { title: 'Villa Savoye', imageUrl: '/src/assets/img/modernArchitecture/modern-1.jpg', location: 'France' },
+    { title: 'Fallingwater', imageUrl: '/src/assets/img/modernArchitecture/modern-2.jpg', location: "USA" },
+    { title: 'Barcelona Pavilion', imageUrl: '/src/assets/img/modernArchitecture/modern-3.jpg', location: 'Spain' },
+    { title: 'Guggenheim Museum', imageUrl: '/src/assets/img/modernArchitecture/modern-4.jpg', location: 'USA' },
+    { title: 'Berlin Television Tower', imageUrl: '/src/assets/img/modernArchitecture/modern-5.jpg', location: 'Germany' },
+    { title: 'Seagram Building', imageUrl: '/src/assets/img/modernArchitecture/modern-6.jpg', location: 'USA' },
+    { title: "Salk Institute for Biological Studies", imageUrl: '/src/assets/img/modernArchitecture/modern-7.jpg', location: 'USA' },
+    { title: 'Pompidou Centre', imageUrl: '/src/assets/img/modernArchitecture/modern-8.jpg', location: 'France' },
+    { title: 'John Hancock Tower', imageUrl: '/src/assets/img/modernArchitecture/modern-9.jpeg', location: 'USA' },
+    { title: 'Farnsworth House', imageUrl: '/src/assets/img/modernArchitecture/modern-10.jpg', location: 'USA' },
+    { title: 'Ronchamp Chapel', imageUrl: '/src/assets/img/modernArchitecture/modern-11.jpg', location: 'France' },
+    { title: 'Malaparte House', imageUrl: '/src/assets/img/modernArchitecture/modern-12.jpg', location: 'Italy' },
+    { title: 'Taichung National Theater', imageUrl: '/src/assets/img/modernArchitecture/modern-13.jpg', location: 'Taiwan' },
+    { title: 'BBVA Bancomer Tower', imageUrl: '/src/assets/img/modernArchitecture/modern-14.jpg', location: 'Mexico' },
+    { title: 'National Museum of Brasilia', imageUrl: '/src/assets/img/modernArchitecture/modern-15.jpg', location: 'Brazil' },
+    { title: 'Hearst Tower', imageUrl: '/src/assets/img/modernArchitecture/modern-16.jpg', location: 'USA' },
+    { title: 'Seattle Central Library', imageUrl: '/src/assets/img/modernArchitecture/modern-17.jpg', location: 'USA' },
+    { title: 'Guggenheim Museum Bilbao', imageUrl: '/src/assets/img/modernArchitecture/modern-18.jpg', location: 'Spain' },
+    { title: 'Louvre Abu Dhabi', imageUrl: '/src/assets/img/modernArchitecture/modern-19.jpg', location: 'United Arab Emirates' },
+    { title: "Sydney Opera House", imageUrl: '/src/assets/img/modernArchitecture/modern-20.jpg', location: 'Australia' },
 ];
 
 
 
-export const WildNature = () => {
+export const ModernArchitecture = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [galleryIndex, setGalleryIndex] = useState(null);
 

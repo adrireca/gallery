@@ -7,31 +7,31 @@ import BackToHomeButton from './BackToHomeButton';
 
 
 const images = [
-    { title: 'Angel Falls', imageUrl: '/src/assets/img/wildNature/salto-angel-venezuela.JPG', location: 'Venezuela' },
-    { title: 'Mercantour National Park', imageUrl: '/src/assets/img/wildNature/parc-mercantour.jpg', location: "France" },
-    { title: 'Antarctica', imageUrl: '/src/assets/img/wildNature/antartida.jpg', location: 'Antarctica' },
-    { title: 'Antelope Canyon', imageUrl: '/src/assets/img/wildNature/canon-antilope-eeuu.jpg', location: 'United States' },
-    { title: 'Atacama Desert', imageUrl: '/src/assets/img/wildNature/desierto-atacama-chile.jpg', location: 'Chile' },
-    { title: 'Arashiyama Bamboo Grove', imageUrl: '/src/assets/img/wildNature/bosque-arashiyama-japon.jpg', location: 'Japan' },
-    { title: 'Avenue of the Baobabs', imageUrl: '/src/assets/img/wildNature/Avenida-Baobabs-madagascar.jpg', location: 'Madagascar' },
-    { title: 'Azores', imageUrl: '/src/assets/img/wildNature/azores-portugal.jpg', location: 'Portugal' },
-    { title: 'Cappadocia', imageUrl: '/src/assets/img/wildNature/capadocia-turquia.jpg', location: 'Turkey' },
-    { title: 'Banff National Park', imageUrl: '/src/assets/img/wildNature/parque-banff-canada.jpg', location: 'Canada' },
-    { title: 'Cliffs of Moher', imageUrl: '/src/assets/img/wildNature/Acantilados-Moher-irlanda.jpg', location: 'Ireland' },
-    { title: 'Denali National Park', imageUrl: '/src/assets/img/wildNature/Parque-nacional-Denali-alaska.jpg', location: 'Alaska' },
-    { title: 'Grand Canyon', imageUrl: '/src/assets/img/wildNature/gran-cañon-eeuu.jpg', location: 'United States' },
-    { title: 'Faroe Islands', imageUrl: '/src/assets/img/wildNature/Islas-Feroe.jpg', location: 'Denmark' },
-    { title: 'Isle of Skye', imageUrl: '/src/assets/img/wildNature/Isla-Skye.jpg', location: 'Scotland' },
-    { title: 'Halong Bay', imageUrl: '/src/assets/img/wildNature/Bahía-Halong.jpg', location: 'Vietnam' },
-    { title: 'Red Lagoon', imageUrl: '/src/assets/img/wildNature/Laguna-Colorada.jpg', location: 'Bolivia' },
-    { title: 'Lake Tekapo', imageUrl: '/src/assets/img/wildNature/Lago-Tekapo.jpg', location: 'New Zealand' },
-    { title: 'Lake Baikal', imageUrl: '/src/assets/img/wildNature/Lago-Baikal.jpg', location: 'Russia' },
-    { title: 'The Great Barrier Reef', imageUrl: '/src/assets/img/wildNature/Gran-Barrera-Coral-australia.jpg', location: 'Australia' },
+    { title: 'Jerusalem', imageUrl: '/src/assets/img/historicCities/jerusalem-israel.jpg', location: 'Israel' },
+    { title: 'Rome', imageUrl: '/src/assets/img/historicCities/roma-italia.jpg', location: "Italy" },
+    { title: 'Athens', imageUrl: '/src/assets/img/historicCities/atenas-grecia.jpg', location: 'Greece' },
+    { title: 'Cairo', imageUrl: '/src/assets/img/historicCities/cairo-egipto.jpg', location: 'Egypt' },
+    { title: 'Istanbul', imageUrl: '/src/assets/img/historicCities/estanbul-turquia.jpg', location: 'Turkey' },
+    { title: 'Beijing', imageUrl: '/src/assets/img/historicCities/beijing-china.jpg', location: 'China' },
+    { title: 'Marrakech', imageUrl: '/src/assets/img/historicCities/marrakech-marruecos.jpg', location: 'Morocco' },
+    { title: 'Kyoto', imageUrl: '/src/assets/img/historicCities/kyoto-japon.jpg', location: 'Japan' },
+    { title: 'Baghdad', imageUrl: '/src/assets/img/historicCities/baghdad-iraq.jpg', location: 'Iraq' },
+    { title: 'Alexandria', imageUrl: '/src/assets/img/historicCities/alexandria-egipto.jpg', location: 'Egypt' },
+    { title: 'Jericho', imageUrl: '/src/assets/img/historicCities/jerico-palestina.jpg', location: 'Palestine' },
+    { title: 'Granada', imageUrl: '/src/assets/img/historicCities/granada-espanya.jpg', location: 'Spain' },
+    { title: 'Lisbon', imageUrl: '/src/assets/img/historicCities/lisboa-portugal.jpg', location: 'Portugal' },
+    { title: 'Quito', imageUrl: '/src/assets/img/historicCities/quito-ecuador.jpg', location: 'Ecuador' },
+    { title: 'Barcelona', imageUrl: '/src/assets/img/historicCities/barcelona-espanya.jpg', location: 'Spain' },
+    { title: 'Moscow', imageUrl: '/src/assets/img/historicCities/moscu-rusia.jpg', location: 'Russia' },
+    { title: 'Petra', imageUrl: '/src/assets/img/historicCities/petra-jordania.jpg', location: 'Jordan' },
+    { title: 'Helsinki', imageUrl: '/src/assets/img/historicCities/helsinki-finlandia.jpg', location: 'Finland' },
+    { title: 'Tunis', imageUrl: '/src/assets/img/historicCities/tunez-tunez.jpg', location: 'Tunisia' },
+    { title: 'Sofia', imageUrl: '/src/assets/img/historicCities/sofia-bulgaria.jpg', location: 'Bulgaria' },
 ];
 
 
 
-export const WildNature = () => {
+export const HistoricCities = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [galleryIndex, setGalleryIndex] = useState(null);
 
