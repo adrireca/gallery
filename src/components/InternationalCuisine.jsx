@@ -7,31 +7,31 @@ import BackToHomeButton from './BackToHomeButton';
 
 
 const images = [
-    { title: 'Diwali', imageUrl: '/src/assets/img/worldCultures/img1-600x900.jpg', location: 'India' },
-    { title: 'Chinese New Year Festival', imageUrl: '/src/assets/img/worldCultures/img2-900x600.jpg', location: "China" },
-    { title: 'Ramadan', imageUrl: '/src/assets/img/worldCultures/img3-900x700.jpg', location: 'Arab Culture' },
-    { title: 'Tea Ceremony', imageUrl: '/src/assets/img/worldCultures/img4-900x700.jpeg', location: 'Japan' },
-    { title: 'Holy Week', imageUrl: '/src/assets/img/worldCultures/img5-900x600.jpg', location: 'Spain' },
-    { title: 'Day of the Dead', imageUrl: '/src/assets/img/worldCultures/img6-1000x1400.jpg', location: 'Mexico' },
-    { title: 'Orthodox Wedding', imageUrl: '/src/assets/img/worldCultures/img7-800x1200.jpg', location: 'Russia' },
-    { title: 'Classical Ballet', imageUrl: '/src/assets/img/worldCultures/img8-800x1000.jpg', location: 'Russia' },
-    { title: 'Venice Carnival', imageUrl: '/src/assets/img/worldCultures/img9-800x1200.jpg', location: 'Italy' },
-    { title: 'Inti Raymi', imageUrl: '/src/assets/img/worldCultures/img10-900x600.jpg', location: 'Inca Culture' },
-    { title: 'Mummification Ritual', imageUrl: '/src/assets/img/worldCultures/img11-800x900.jpg', location: 'Ancient Egypt' },
-    { title: 'Ball Game', imageUrl: '/src/assets/img/worldCultures/img12-600x900.jpg', location: 'Maya Culture' },
-    { title: 'Griot', imageUrl: '/src/assets/img/worldCultures/img13-900x700.jpg', location: 'Sub-Saharan Africa' },
-    { title: 'Rio de Janeiro Carnival', imageUrl: '/src/assets/img/worldCultures/img14-800x1200.jpg', location: 'Brazil' },
-    { title: 'Hangeul Day', imageUrl: '/src/assets/img/worldCultures/img15-600x800.jpg', location: 'Korea' },
-    { title: 'Midsummer Festival', imageUrl: '/src/assets/img/worldCultures/img16-600x900.jpg', location: 'Sweden, Nordic Culture' },
-    { title: 'Nowruz', imageUrl: '/src/assets/img/worldCultures/img17-600x800.jpg', location: 'Iran, Persian Culture' },
-    { title: 'Walkabout', imageUrl: '/src/assets/img/worldCultures/img18-800x1200.jpg', location: 'Aboriginal Australians' },
-    { title: 'Trinidad and Tobago Carnival', imageUrl: '/src/assets/img/worldCultures/img19-800x800.jpg', location: 'Caribbean Culture' },
-    { title: 'Thanksgiving', imageUrl: '/src/assets/img/worldCultures/img20-900x600.jpg', location: 'United States, American Culture' },
+    { title: '"Tacos al Pastor"', imageUrl: '/src/assets/img/internationalCuisine/img1-600x900.jpg', location: 'Mexico' },
+    { title: 'Croissant', imageUrl: '/src/assets/img/internationalCuisine/img2-900x600.jpg', location: "France" },
+    { title: 'Paella', imageUrl: '/src/assets/img/internationalCuisine/img3-900x700.jpg', location: 'Spain' },
+    { title: 'Pad Thai', imageUrl: '/src/assets/img/internationalCuisine/img4-900x700.jpg', location: 'Thailand' },
+    { title: 'Pizza Margherita', imageUrl: '/src/assets/img/internationalCuisine/img5-900x600.jpg', location: 'Italy' },
+    { title: 'Ceviche', imageUrl: '/src/assets/img/internationalCuisine/img6-1000x1400.jpg', location: 'Peru' },
+    { title: 'Butter Chicken', imageUrl: '/src/assets/img/internationalCuisine/img7-800x1200.jpg', location: 'India' },
+    { title: 'Borscht', imageUrl: '/src/assets/img/internationalCuisine/img8-800x1000.jpg', location: 'Russia / Ukraine' },
+    { title: 'Moussaka', imageUrl: '/src/assets/img/internationalCuisine/img9-800x1200.jpg', location: 'Greece' },
+    { title: 'Feijoada', imageUrl: '/src/assets/img/internationalCuisine/img10-900x600.jpg', location: 'Brazil' },
+    { title: 'Ramen', imageUrl: '/src/assets/img/internationalCuisine/img11-800x900.jpg', location: 'Japan' },
+    { title: 'Sauerbraten', imageUrl: '/src/assets/img/internationalCuisine/img12-600x900.jpg', location: 'Germany' },
+    { title: 'Dim Sum', imageUrl: '/src/assets/img/internationalCuisine/img13-900x700.jpg', location: 'China' },
+    { title: 'Tagine', imageUrl: '/src/assets/img/internationalCuisine/img14-800x1200.webp', location: 'Morocco' },
+    { title: 'Sushi', imageUrl: '/src/assets/img/internationalCuisine/img15-600x800.jpg', location: 'Japan' },
+    { title: 'Arepas', imageUrl: '/src/assets/img/internationalCuisine/img16-600x900.jpg', location: 'Venezuela / Colombia' },
+    { title: 'Poutine', imageUrl: '/src/assets/img/internationalCuisine/img17-600x800.webp', location: 'Canada' },
+    { title: 'Baklava', imageUrl: '/src/assets/img/internationalCuisine/img18-800x1200.jpg', location: 'Turkey / Greece' },
+    { title: 'Tom Yum', imageUrl: '/src/assets/img/internationalCuisine/img19-800x800.jpg', location: 'Thailand' },
+    { title: 'Falafel', imageUrl: '/src/assets/img/internationalCuisine/img20-900x600.jpg', location: 'Middle East' },
 ];
 
 
 
-export const WorldCultures = () => {
+export const InternationalCuisine = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [galleryIndex, setGalleryIndex] = useState(null);
 

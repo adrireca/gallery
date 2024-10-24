@@ -7,31 +7,31 @@ import BackToHomeButton from './BackToHomeButton';
 
 
 const images = [
-    { title: 'Diwali', imageUrl: '/src/assets/img/worldCultures/img1-600x900.jpg', location: 'India' },
-    { title: 'Chinese New Year Festival', imageUrl: '/src/assets/img/worldCultures/img2-900x600.jpg', location: "China" },
-    { title: 'Ramadan', imageUrl: '/src/assets/img/worldCultures/img3-900x700.jpg', location: 'Arab Culture' },
-    { title: 'Tea Ceremony', imageUrl: '/src/assets/img/worldCultures/img4-900x700.jpeg', location: 'Japan' },
-    { title: 'Holy Week', imageUrl: '/src/assets/img/worldCultures/img5-900x600.jpg', location: 'Spain' },
-    { title: 'Day of the Dead', imageUrl: '/src/assets/img/worldCultures/img6-1000x1400.jpg', location: 'Mexico' },
-    { title: 'Orthodox Wedding', imageUrl: '/src/assets/img/worldCultures/img7-800x1200.jpg', location: 'Russia' },
-    { title: 'Classical Ballet', imageUrl: '/src/assets/img/worldCultures/img8-800x1000.jpg', location: 'Russia' },
-    { title: 'Venice Carnival', imageUrl: '/src/assets/img/worldCultures/img9-800x1200.jpg', location: 'Italy' },
-    { title: 'Inti Raymi', imageUrl: '/src/assets/img/worldCultures/img10-900x600.jpg', location: 'Inca Culture' },
-    { title: 'Mummification Ritual', imageUrl: '/src/assets/img/worldCultures/img11-800x900.jpg', location: 'Ancient Egypt' },
-    { title: 'Ball Game', imageUrl: '/src/assets/img/worldCultures/img12-600x900.jpg', location: 'Maya Culture' },
-    { title: 'Griot', imageUrl: '/src/assets/img/worldCultures/img13-900x700.jpg', location: 'Sub-Saharan Africa' },
-    { title: 'Rio de Janeiro Carnival', imageUrl: '/src/assets/img/worldCultures/img14-800x1200.jpg', location: 'Brazil' },
-    { title: 'Hangeul Day', imageUrl: '/src/assets/img/worldCultures/img15-600x800.jpg', location: 'Korea' },
-    { title: 'Midsummer Festival', imageUrl: '/src/assets/img/worldCultures/img16-600x900.jpg', location: 'Sweden, Nordic Culture' },
-    { title: 'Nowruz', imageUrl: '/src/assets/img/worldCultures/img17-600x800.jpg', location: 'Iran, Persian Culture' },
-    { title: 'Walkabout', imageUrl: '/src/assets/img/worldCultures/img18-800x1200.jpg', location: 'Aboriginal Australians' },
-    { title: 'Trinidad and Tobago Carnival', imageUrl: '/src/assets/img/worldCultures/img19-800x800.jpg', location: 'Caribbean Culture' },
-    { title: 'Thanksgiving', imageUrl: '/src/assets/img/worldCultures/img20-900x600.jpg', location: 'United States, American Culture' },
+    { title: 'Eduardo Kobra Graffiti', imageUrl: '/src/assets/img/urbanArt/img1-600x900.jpg', location: 'Brazil' },
+    { title: 'Shepard Fairey Artwork', imageUrl: '/src/assets/img/urbanArt/img2-900x600.jpg', location: "United States" },
+    { title: 'Banksy Mural', imageUrl: '/src/assets/img/urbanArt/img3-900x700.jpeg', location: 'London' },
+    { title: 'ROA Murals', imageUrl: '/src/assets/img/urbanArt/img4-900x700.jpg', location: 'Belgium' },
+    { title: 'Swoon Graffiti', imageUrl: '/src/assets/img/urbanArt/img5-900x600.jpg', location: 'United States' },
+    { title: '"La Madre Secular" Mural by INTI', imageUrl: '/src/assets/img/urbanArt/img6-1000x1400.jpg', location: 'Chile' },
+    { title: 'Etam Cru Murals', imageUrl: '/src/assets/img/urbanArt/img7-800x1200.jpg', location: 'Poland' },
+    { title: 'JR Art', imageUrl: '/src/assets/img/urbanArt/img8-800x1000.jpg', location: 'France' },
+    { title: 'Retna Mural', imageUrl: '/src/assets/img/urbanArt/img9-800x1200.jpg', location: 'United States' },
+    { title: '"The Kiss" by Xemaáta', imageUrl: '/src/assets/img/urbanArt/img10-900x600.jpg', location: 'Germany' },
+    { title: '"El Pez"', imageUrl: '/src/assets/img/urbanArt/img11-800x900.jpg', location: 'Colombia' },
+    { title: 'Okuda San Miguel Mural', imageUrl: '/src/assets/img/urbanArt/img12-600x900.jpg', location: 'Spain' },
+    { title: 'Os Gemeos Mural', imageUrl: '/src/assets/img/urbanArt/img13-900x700.jpg', location: 'Portugal' },
+    { title: 'Blu Mural', imageUrl: '/src/assets/img/urbanArt/img14-800x1200.jpg', location: 'Italy' },
+    { title: 'Miss Van Graffiti', imageUrl: '/src/assets/img/urbanArt/img15-600x800.jpg', location: 'Spain' },
+    { title: 'Aryz Murals', imageUrl: '/src/assets/img/urbanArt/img16-600x900.jpg', location: 'Spain' },
+    { title: 'Phlegm Art', imageUrl: '/src/assets/img/urbanArt/img17-600x800.jpg', location: 'UK' },
+    { title: 'Vhils Graffiti', imageUrl: '/src/assets/img/urbanArt/img18-800x1200.jpg', location: 'Portugal' },
+    { title: 'Girl with Balloon by Banksy', imageUrl: '/src/assets/img/urbanArt/img19-800x800.jpg', location: 'UK' },
+    { title: 'The Peace Wall', imageUrl: '/src/assets/img/urbanArt/img20-900x600.jpg', location: 'Northern Ireland' },
 ];
 
 
 
-export const WorldCultures = () => {
+export const UrbanArt = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [galleryIndex, setGalleryIndex] = useState(null);
 

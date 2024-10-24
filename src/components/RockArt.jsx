@@ -7,31 +7,31 @@ import BackToHomeButton from './BackToHomeButton';
 
 
 const images = [
-    { title: 'Diwali', imageUrl: '/src/assets/img/worldCultures/img1-600x900.jpg', location: 'India' },
-    { title: 'Chinese New Year Festival', imageUrl: '/src/assets/img/worldCultures/img2-900x600.jpg', location: "China" },
-    { title: 'Ramadan', imageUrl: '/src/assets/img/worldCultures/img3-900x700.jpg', location: 'Arab Culture' },
-    { title: 'Tea Ceremony', imageUrl: '/src/assets/img/worldCultures/img4-900x700.jpeg', location: 'Japan' },
-    { title: 'Holy Week', imageUrl: '/src/assets/img/worldCultures/img5-900x600.jpg', location: 'Spain' },
-    { title: 'Day of the Dead', imageUrl: '/src/assets/img/worldCultures/img6-1000x1400.jpg', location: 'Mexico' },
-    { title: 'Orthodox Wedding', imageUrl: '/src/assets/img/worldCultures/img7-800x1200.jpg', location: 'Russia' },
-    { title: 'Classical Ballet', imageUrl: '/src/assets/img/worldCultures/img8-800x1000.jpg', location: 'Russia' },
-    { title: 'Venice Carnival', imageUrl: '/src/assets/img/worldCultures/img9-800x1200.jpg', location: 'Italy' },
-    { title: 'Inti Raymi', imageUrl: '/src/assets/img/worldCultures/img10-900x600.jpg', location: 'Inca Culture' },
-    { title: 'Mummification Ritual', imageUrl: '/src/assets/img/worldCultures/img11-800x900.jpg', location: 'Ancient Egypt' },
-    { title: 'Ball Game', imageUrl: '/src/assets/img/worldCultures/img12-600x900.jpg', location: 'Maya Culture' },
-    { title: 'Griot', imageUrl: '/src/assets/img/worldCultures/img13-900x700.jpg', location: 'Sub-Saharan Africa' },
-    { title: 'Rio de Janeiro Carnival', imageUrl: '/src/assets/img/worldCultures/img14-800x1200.jpg', location: 'Brazil' },
-    { title: 'Hangeul Day', imageUrl: '/src/assets/img/worldCultures/img15-600x800.jpg', location: 'Korea' },
-    { title: 'Midsummer Festival', imageUrl: '/src/assets/img/worldCultures/img16-600x900.jpg', location: 'Sweden, Nordic Culture' },
-    { title: 'Nowruz', imageUrl: '/src/assets/img/worldCultures/img17-600x800.jpg', location: 'Iran, Persian Culture' },
-    { title: 'Walkabout', imageUrl: '/src/assets/img/worldCultures/img18-800x1200.jpg', location: 'Aboriginal Australians' },
-    { title: 'Trinidad and Tobago Carnival', imageUrl: '/src/assets/img/worldCultures/img19-800x800.jpg', location: 'Caribbean Culture' },
-    { title: 'Thanksgiving', imageUrl: '/src/assets/img/worldCultures/img20-900x600.jpg', location: 'United States, American Culture' },
+    { title: 'Altamira Cave', imageUrl: '/src/assets/img/rockArt/img1-600x900.jpg', location: 'Spain' },
+    { title: 'Lascaux Caves', imageUrl: '/src/assets/img/rockArt/img2-900x600.webp', location: 'France' },
+    { title: 'Bhimbetka Rock Shelters', imageUrl: '/src/assets/img/rockArt/img3-900x700.jpg', location: 'India' },
+    { title: 'El Castillo Cave', imageUrl: '/src/assets/img/rockArt/img4-900x700.jpg', location: 'Spain' },
+    { title: 'Chauvet Cave', imageUrl: '/src/assets/img/rockArt/img5-900x600.jpg', location: 'France' },
+    { title: 'Serra da Capivara Caves', imageUrl: '/src/assets/img/rockArt/img6-1000x1400.jpg', location: 'Brazil' },
+    { title: 'Kakadu National Park', imageUrl: '/src/assets/img/rockArt/img7-800x1200.jpg', location: 'Australia' },
+    { title: 'Loltún Cave', imageUrl: '/src/assets/img/rockArt/img8-800x1000.jpg', location: 'Mexico' },
+    { title: 'Tsodilo Hills', imageUrl: '/src/assets/img/rockArt/img9-800x1200.jpg', location: 'Botswana' },
+    { title: 'Tadrart Acacus Rock Art', imageUrl: '/src/assets/img/rockArt/img10-900x600.jpg', location: 'Libya' },
+    { title: 'Twyfelfontein Rock Engravings', imageUrl: '/src/assets/img/rockArt/img11-800x900.jpg', location: 'Namibia' },
+    { title: 'Val Camonica Petroglyphs', imageUrl: '/src/assets/img/rockArt/img12-600x900.jpg', location: 'Italy' },
+    { title: 'Laas Geel Caves', imageUrl: '/src/assets/img/rockArt/img13-900x700.webp', location: 'Somalia' },
+    { title: 'Cueva de las Manos', imageUrl: '/src/assets/img/rockArt/img14-800x1200.jpg', location: 'Argentina' },
+    { title: 'Magura Cave', imageUrl: '/src/assets/img/rockArt/img15-600x800.jpg', location: 'Bulgaria' },
+    { title: 'Niaux Cave', imageUrl: '/src/assets/img/rockArt/img16-600x900.jpg', location: 'France' },
+    { title: 'Foz Côa Valley', imageUrl: '/src/assets/img/rockArt/img17-600x800.webp', location: 'Portugal' },
+    { title: 'Mount Bego Petroglyphs', imageUrl: '/src/assets/img/rockArt/img18-800x1200.jpg', location: 'France / Italy' },
+    { title: 'Les Eyzies Caves', imageUrl: '/src/assets/img/rockArt/img19-800x800.jpg', location: 'France' },
+    { title: 'Ennedi Massif Rock Art', imageUrl: '/src/assets/img/rockArt/img20-900x600.jpg', location: 'Chad' },
 ];
 
 
 
-export const WorldCultures = () => {
+export const RockArt = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [galleryIndex, setGalleryIndex] = useState(null);
 

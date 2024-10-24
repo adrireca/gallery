@@ -7,31 +7,31 @@ import BackToHomeButton from './BackToHomeButton';
 
 
 const images = [
-    { title: 'Diwali', imageUrl: '/src/assets/img/worldCultures/img1-600x900.jpg', location: 'India' },
-    { title: 'Chinese New Year Festival', imageUrl: '/src/assets/img/worldCultures/img2-900x600.jpg', location: "China" },
-    { title: 'Ramadan', imageUrl: '/src/assets/img/worldCultures/img3-900x700.jpg', location: 'Arab Culture' },
-    { title: 'Tea Ceremony', imageUrl: '/src/assets/img/worldCultures/img4-900x700.jpeg', location: 'Japan' },
-    { title: 'Holy Week', imageUrl: '/src/assets/img/worldCultures/img5-900x600.jpg', location: 'Spain' },
-    { title: 'Day of the Dead', imageUrl: '/src/assets/img/worldCultures/img6-1000x1400.jpg', location: 'Mexico' },
-    { title: 'Orthodox Wedding', imageUrl: '/src/assets/img/worldCultures/img7-800x1200.jpg', location: 'Russia' },
-    { title: 'Classical Ballet', imageUrl: '/src/assets/img/worldCultures/img8-800x1000.jpg', location: 'Russia' },
-    { title: 'Venice Carnival', imageUrl: '/src/assets/img/worldCultures/img9-800x1200.jpg', location: 'Italy' },
-    { title: 'Inti Raymi', imageUrl: '/src/assets/img/worldCultures/img10-900x600.jpg', location: 'Inca Culture' },
-    { title: 'Mummification Ritual', imageUrl: '/src/assets/img/worldCultures/img11-800x900.jpg', location: 'Ancient Egypt' },
-    { title: 'Ball Game', imageUrl: '/src/assets/img/worldCultures/img12-600x900.jpg', location: 'Maya Culture' },
-    { title: 'Griot', imageUrl: '/src/assets/img/worldCultures/img13-900x700.jpg', location: 'Sub-Saharan Africa' },
-    { title: 'Rio de Janeiro Carnival', imageUrl: '/src/assets/img/worldCultures/img14-800x1200.jpg', location: 'Brazil' },
-    { title: 'Hangeul Day', imageUrl: '/src/assets/img/worldCultures/img15-600x800.jpg', location: 'Korea' },
-    { title: 'Midsummer Festival', imageUrl: '/src/assets/img/worldCultures/img16-600x900.jpg', location: 'Sweden, Nordic Culture' },
-    { title: 'Nowruz', imageUrl: '/src/assets/img/worldCultures/img17-600x800.jpg', location: 'Iran, Persian Culture' },
-    { title: 'Walkabout', imageUrl: '/src/assets/img/worldCultures/img18-800x1200.jpg', location: 'Aboriginal Australians' },
-    { title: 'Trinidad and Tobago Carnival', imageUrl: '/src/assets/img/worldCultures/img19-800x800.jpg', location: 'Caribbean Culture' },
-    { title: 'Thanksgiving', imageUrl: '/src/assets/img/worldCultures/img20-900x600.jpg', location: 'United States, American Culture' },
+    { title: 'Spice Market in Marrakech', imageUrl: '/src/assets/img/everydayMoments/img1-600x900.webp', location: 'Morocco' },
+    { title: 'Rush Hour on the Tokyo Metro', imageUrl: '/src/assets/img/everydayMoments/img2-900x600.jpg', location: "Japan" },
+    { title: 'Outdoor Café in Paris', imageUrl: '/src/assets/img/everydayMoments/img3-900x700.webp', location: 'France' },
+    { title: 'Women Weaving in the Andes', imageUrl: '/src/assets/img/everydayMoments/img4-900x700.jpg', location: 'Peru' },
+    { title: 'Children Playing in the Streets of Havana', imageUrl: '/src/assets/img/everydayMoments/img5-900x600.jpg', location: 'Cuba' },
+    { title: 'Tea Ceremony in Kyoto', imageUrl: '/src/assets/img/everydayMoments/img6-1000x1400.jpeg', location: 'Japan' },
+    { title: 'Breakfast at a Bakery in Lisbon', imageUrl: '/src/assets/img/everydayMoments/img7-800x1200.jpg', location: 'Portugal' },
+    { title: 'Street Food Stalls in Bangkok', imageUrl: '/src/assets/img/everydayMoments/img8-800x1000.jpg', location: 'Thailand' },
+    { title: 'Cyclists in Amsterdam', imageUrl: '/src/assets/img/everydayMoments/img9-800x1200.jpg', location: 'Netherlands' },
+    { title: 'Main Square During a Local Festival', imageUrl: '/src/assets/img/everydayMoments/img10-900x600.jpg', location: 'Mexico' },
+    { title: 'Sunset on Copacabana Beach', imageUrl: '/src/assets/img/everydayMoments/img11-800x900.jpg', location: 'Brazil' },
+    { title: 'Laundresses by the Ganges River in Varanasi', imageUrl: '/src/assets/img/everydayMoments/img12-600x900.jpg', location: 'India' },
+    { title: 'Afternoon in a Park in Buenos Aires', imageUrl: '/src/assets/img/everydayMoments/img13-900x700.jpg', location: 'Argentina' },
+    { title: 'Fishing on the Kerala Canals', imageUrl: '/src/assets/img/everydayMoments/img14-800x1200.jpg', location: 'India' },
+    { title: 'Sunset in the Sahara Desert', imageUrl: '/src/assets/img/everydayMoments/img15-600x800.jpg', location: 'Morocco' },
+    { title: 'Street Café in Istanbul', imageUrl: '/src/assets/img/everydayMoments/img16-600x900.webp', location: 'Turkey' },
+    { title: 'Women Shopping in a Souk in Cairo', imageUrl: '/src/assets/img/everydayMoments/img17-600x800.webp', location: 'Egypt' },
+    { title: 'Bustling Streets in New York City', imageUrl: '/src/assets/img/everydayMoments/img18-800x1200.jpg', location: 'United States' },
+    { title: 'Gondola Ride in Venice', imageUrl: '/src/assets/img/everydayMoments/img19-800x800.jpg', location: 'Italy' },
+    { title: 'Fruit Vendors at a Floating Market', imageUrl: '/src/assets/img/everydayMoments/img20-900x600.webp', location: 'Vietnam' },
 ];
 
 
 
-export const WorldCultures = () => {
+export const EverydayMoments = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [galleryIndex, setGalleryIndex] = useState(null);
 

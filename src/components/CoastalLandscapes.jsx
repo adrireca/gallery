@@ -7,31 +7,31 @@ import BackToHomeButton from './BackToHomeButton';
 
 
 const images = [
-    { title: 'Diwali', imageUrl: '/src/assets/img/worldCultures/img1-600x900.jpg', location: 'India' },
-    { title: 'Chinese New Year Festival', imageUrl: '/src/assets/img/worldCultures/img2-900x600.jpg', location: "China" },
-    { title: 'Ramadan', imageUrl: '/src/assets/img/worldCultures/img3-900x700.jpg', location: 'Arab Culture' },
-    { title: 'Tea Ceremony', imageUrl: '/src/assets/img/worldCultures/img4-900x700.jpeg', location: 'Japan' },
-    { title: 'Holy Week', imageUrl: '/src/assets/img/worldCultures/img5-900x600.jpg', location: 'Spain' },
-    { title: 'Day of the Dead', imageUrl: '/src/assets/img/worldCultures/img6-1000x1400.jpg', location: 'Mexico' },
-    { title: 'Orthodox Wedding', imageUrl: '/src/assets/img/worldCultures/img7-800x1200.jpg', location: 'Russia' },
-    { title: 'Classical Ballet', imageUrl: '/src/assets/img/worldCultures/img8-800x1000.jpg', location: 'Russia' },
-    { title: 'Venice Carnival', imageUrl: '/src/assets/img/worldCultures/img9-800x1200.jpg', location: 'Italy' },
-    { title: 'Inti Raymi', imageUrl: '/src/assets/img/worldCultures/img10-900x600.jpg', location: 'Inca Culture' },
-    { title: 'Mummification Ritual', imageUrl: '/src/assets/img/worldCultures/img11-800x900.jpg', location: 'Ancient Egypt' },
-    { title: 'Ball Game', imageUrl: '/src/assets/img/worldCultures/img12-600x900.jpg', location: 'Maya Culture' },
-    { title: 'Griot', imageUrl: '/src/assets/img/worldCultures/img13-900x700.jpg', location: 'Sub-Saharan Africa' },
-    { title: 'Rio de Janeiro Carnival', imageUrl: '/src/assets/img/worldCultures/img14-800x1200.jpg', location: 'Brazil' },
-    { title: 'Hangeul Day', imageUrl: '/src/assets/img/worldCultures/img15-600x800.jpg', location: 'Korea' },
-    { title: 'Midsummer Festival', imageUrl: '/src/assets/img/worldCultures/img16-600x900.jpg', location: 'Sweden, Nordic Culture' },
-    { title: 'Nowruz', imageUrl: '/src/assets/img/worldCultures/img17-600x800.jpg', location: 'Iran, Persian Culture' },
-    { title: 'Walkabout', imageUrl: '/src/assets/img/worldCultures/img18-800x1200.jpg', location: 'Aboriginal Australians' },
-    { title: 'Trinidad and Tobago Carnival', imageUrl: '/src/assets/img/worldCultures/img19-800x800.jpg', location: 'Caribbean Culture' },
-    { title: 'Thanksgiving', imageUrl: '/src/assets/img/worldCultures/img20-900x600.jpg', location: 'United States, American Culture' },
+    { title: 'Big Sur', imageUrl: '/src/assets/img/coastalLandscapes/img1-600x900.jpg', location: 'United States' },
+    { title: 'Navagio Beach', imageUrl: '/src/assets/img/coastalLandscapes/img2-900x600.jpg', location: "Greece" },
+    { title: 'Cliffs of Moher', imageUrl: '/src/assets/img/coastalLandscapes/img3-900x700.jpg', location: 'Ireland' },
+    { title: 'Lofoten Islands', imageUrl: '/src/assets/img/coastalLandscapes/img4-900x700.jpg', location: 'Norway' },
+    { title: 'Great Ocean Road', imageUrl: '/src/assets/img/coastalLandscapes/img5-900x600.jpg', location: 'Australia' },
+    { title: 'Amalfi Coast', imageUrl: '/src/assets/img/coastalLandscapes/img6-1000x1400.jpg', location: 'Italy' },
+    { title: 'Bay of Fundy', imageUrl: '/src/assets/img/coastalLandscapes/img7-800x1200.jpg', location: 'Canada' },
+    { title: 'Cape of Good Hope', imageUrl: '/src/assets/img/coastalLandscapes/img8-800x1000.jpg', location: 'South Africa' },
+    { title: 'Santorini', imageUrl: '/src/assets/img/coastalLandscapes/img9-800x1200.jpg', location: 'Greece' },
+    { title: 'Halong Bay', imageUrl: '/src/assets/img/coastalLandscapes/img10-900x600.jpg', location: 'Vietnam' },
+    { title: 'Hidden Beach', imageUrl: '/src/assets/img/coastalLandscapes/img11-800x900.jpg', location: 'Mexico' },
+    { title: 'Geiranger Fjords', imageUrl: '/src/assets/img/coastalLandscapes/img12-600x900.jpg', location: 'Norway' },
+    { title: 'Riviera Maya', imageUrl: '/src/assets/img/coastalLandscapes/img13-900x700.jpg', location: 'Mexico' },
+    { title: 'Phang Nga Bay', imageUrl: '/src/assets/img/coastalLandscapes/img14-800x1200.jpg', location: 'Thailand' },
+    { title: 'Cliffs of Étretat', imageUrl: '/src/assets/img/coastalLandscapes/img15-600x800.jpg', location: 'France' },
+    { title: 'Seychelles Islands', imageUrl: '/src/assets/img/coastalLandscapes/img16-600x900.jpg', location: 'Indian Ocean' },
+    { title: 'Cathedrals Beach', imageUrl: '/src/assets/img/coastalLandscapes/img17-600x800.jpg', location: 'Spain' },
+    { title: 'Whitehaven Beach', imageUrl: '/src/assets/img/coastalLandscapes/img18-800x1200.jpg', location: 'Australia' },
+    { title: 'Isle of Skye', imageUrl: '/src/assets/img/coastalLandscapes/img19-800x800.jpg', location: 'Scotland' },
+    { title: 'Galápagos Islands', imageUrl: '/src/assets/img/coastalLandscapes/img20-900x600.jpg', location: 'Ecuador' },
 ];
 
 
 
-export const WorldCultures = () => {
+export const CoastalLandscapes = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [galleryIndex, setGalleryIndex] = useState(null);
 
